@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Application_status extends AppCompatActivity {
 
     Button btn_next;
+    String a;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
