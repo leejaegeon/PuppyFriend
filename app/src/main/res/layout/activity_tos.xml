@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* 다음의 약관에 동의해주세요."
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/background"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="제 1조 \n 이 약관은 puppyfriends가 제공하는 펫시터 중개 서비스 입니다.\n
+ 제 2 조 (약관의 명시, 효력 및 변경)\n
+1. 이 약관은  앱에서 온라인으로 공시함으로써 효력이 발생됩니다.\n
+2. 회원의 연락처나 이메일 주소 미기재, 변경 등으로 인하여 개별 통지가 어려운 경우, 회원이 등록한 연락처나 이메일 주소로 공지를 하였음에도 2회 이상 반송되었을 시 이 약관에 의한 공지를 함으로써 개별 통지한 것으로 간주합니다.\n
+3. 이 약관에 동의하는 것은 정기적으로 회사가 운영하는 인터넷 사이트와 앱을 방문하여 약관의 변경사항을 확인하는 것에 동의함을 의미합니다. 변경된 약관에 대한 정보를 알지 못하여 발생하는 회원 또는 이용자의 피해에 대하여 회사는 책임을 부담하지 않습니다.\n
+4. 회원은 변경된 약관에 동의하지 않을 경우 회원 해지(탈퇴)를 요청할 수 있으며, 변경된 약관의 효력 발생일 이후에도 서비스를 계속 사용할 경우 약관의 변경 사항에 동의한 것으로 간주됩니다.\n
+제 3조 (대리행위의 부인)\n
+회사는 통신판매중개자로서 효율적인 서비스를 위한 시스템 운영 및 관리 책임만을 부담하며, 재화 또는 용역의 거래와 관련하여 의뢰인 또는 펫시터를 대리하지 아니하고, 회원 사이에 성립된 거래 및 회원이 제공하고 등록한 정보에 대해서는 해당 회원이 그에 대한 직접적인 책임을 부담하여야 합니다.\n
+제 4조 (보증의 부인)\n
+회사는 회사가 제공하는 시스템을 통하여 이루어지는 펫시터와 의뢰인 간의 거래와 관련하여 ‘반려동물 돌봄 서비스(펫시터 집에 맡기기, 펫시터 부르기)’의 품질, 완전성, 안정성, 적법성 및 타인의 권리에 대한 비침해성, 펫시터 또는 의뢰인이 입력하는 정보 및 그 정보를 통하여 링크된 URL에 게재된 자료의 진실성 또는 적법성 등 일체에 대하여 보증하지 아니합니다.\n
+제 5 조 (이용 계약의 성립)\n
+1. 이용계약은 이용고객의 본 이용약관 내용에 대한 동의와 이용신청에 대하여 회사의 이용승낙으로 성립합니다.
+2. 본 이용약관에 대한 동의는 이용신청 당시 해당 도그메이트 사이트의 ‘동의함’ 버튼을 누름으로써 의사표시를 합니다.
+3. 약관을 읽지 않음으로 발생할 수 있는 피해의 책임은 전적으로 회원에게 있습니다.\n
+제 6조 (서비스 이용신청)\n
+1. 회사가 제공하는 서비스를 이용하고자 하는 사용자는 회사가 온라인으로 제공하는 회원가입 신청양식에 따라 필요사항을 기재하여야 합니다.\n
+- 필수 기재항목 : 이메일, 비밀번호, 이름, 성별, 주소, 생년월일, 가입인증 휴대폰번호\n
+2. 회사는 회원가입 이후 위 제1 항에 표시된 필수항목 외에 추가적인 정보(예시 : 신분인증사진(신분증,우편물), 주거형태, 펫시터 본인 사진, 반려동물에 관한 정보 등)를 요청할 수 있습니다.\n
+3. 이용 계약은 만 19세 이상의 개인이 할 수 있습니다. 이용신청자는 실명으로 가입신청을 하여야 합니다.\n
+4. 회원 아이디(ID)는 실명 1인당 1개의 아이디를 사용하는 것을 원칙으로 하되, 실명의 기준은 개인회원신청의 경우 고유식별정보(CI,DI)를 기준으로 합니다.\n
+5. 타인의 명의(이름 및 이메일, 주소, 연락처)를 도용하여 이용신청을 한 회원은 계정이 삭제될 수 있으며 이에 대한 권리를 일체 주장할 수 없고 관계법령에 따라 처벌을 받을 수 있습니다.\n
+6. 회사는 이용계약에 앞서 이용신청자가 기록한 신청서를 기준으로 실명확인을 합니다.\n
+7. 회원 가입신청의 경우 법령에 따라 이용 가능한 신용정보업자 또는 신용정보집중기관을 통하여 고유식별정보(CI,DI)와 성명의 일치 여부를 확인함으로써 본인확인절차를 진행하며, 회사는 본인확인절차를 취할 수 없는 이용신청에 대해서는 신청자에게 증빙자료를 요청할 수 있습니다.\n
+"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blue3"
+                android:text="동의하지 않음"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/blue3"
+                android:text="동의함"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

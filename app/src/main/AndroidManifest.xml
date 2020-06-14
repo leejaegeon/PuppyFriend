@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sw.PuppyFriends">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PuppyFriends"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.sw.PuppyFriends.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sw.PuppyFriends.Register"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.sw.PuppyFriends.Login"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.sw.PuppyFriends.HomeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.sw.PuppyFriends.ResetPasswordActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.sw.PuppyFriends.EditProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.sw.PuppyFriends.ProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.sw.PuppyFriends.SitterApplicationActivity" />
+        <activity android:name="com.sw.PuppyFriends.UserApplicationActivity" />
+        <activity android:name="com.sw.PuppyFriends.SettingConditionActivity" />
+        <activity android:name="com.sw.PuppyFriends.SettingDetailInfoActivity" />
+        <activity android:name="com.sw.PuppyFriends.Meeting" />
+        <activity android:name="com.sw.PuppyFriends.MeetingResult" />
+        <activity android:name="com.sw.PuppyFriends.matchreport" />
+        <activity android:name="com.sw.PuppyFriends.CheckProfileActivity" />
+        <activity android:name="com.sw.PuppyFriends.Users" />
+        <activity android:name="com.sw.PuppyFriends.Chat" />
+        <activity android:name="com.sw.PuppyFriends.Waiting" />
+        <activity android:name="com.sw.PuppyFriends.SittingOngoing" />
+        <activity android:name="com.sw.PuppyFriends.Rating">
+        </activity>
+        <activity android:name="com.sw.PuppyFriends.tos" />
+        <activity android:name="com.sw.PuppyFriends.Meetingbefore_agree" />
+        <activity android:name="com.sw.PuppyFriends.Matchinglist" />
+        <activity android:name="com.sw.PuppyFriends.Sitterlist"/>
+        <activity android:name="com.sw.PuppyFriends.Favorite"/>
+        <activity android:name="com.sw.PuppyFriends.matchreportResult"/>
+        <activity android:name="com.sw.PuppyFriends.ReportActivity"/>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="test"/>
+
+        <service android:name="com.sw.PuppyFriends.FirebaseMessageManager"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

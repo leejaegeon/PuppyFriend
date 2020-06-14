@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SettingConditionActivity">
+
+        <TextView
+            android:id="@+id/price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="원하는 가격"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/target_low_price"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/to"
+            android:hint="가격"
+            android:layout_below="@id/price_txt"/>
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~"
+            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/price_txt"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/target_high_price"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="가격"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/to"
+            android:layout_below="@id/price_txt"/>
+
+        <TextView
+            android:id="@+id/type_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/target_low_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="날짜"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/day5_select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/type_txt"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/day10_select_btn"
+            android:background="@color/blue3"
+            android:text="5일이내"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/day10_select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/type_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/blue3"
+            android:text="10일이내"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/extra_day_select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/type_txt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/day10_select_btn"
+            android:background="@color/blue3"
+            android:text="상관없음"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/extra_day_select_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="위치"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/loc_radio_btn_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance">
+
+            <RadioButton
+                android:id="@+id/loc1_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:hint="대덕구"/>
+
+            <RadioButton
+                android:id="@+id/loc2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:hint="유성구"/>
+
+            <RadioButton
+                android:id="@+id/loc3_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:hint="동구"/>
+
+            <RadioButton
+                android:id="@+id/loc4_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:hint="서구"/>
+
+            <RadioButton
+                android:id="@+id/loc5_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:hint="중구"/>
+            <RadioButton
+                android:id="@+id/loc6_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="상관없음"/>
+
+        </RadioGroup>
+
+<!--        <TextView-->
+<!--            android:id="@+id/extra_service_txt"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/loc_radio_btn_group"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:text="추가 선택"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/service_check1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="픽업가능"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textColor="@color/common_google_signin_btn_text_light"-->
+<!--            android:layout_below="@id/extra_service_txt"/>-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/service_check2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="반려동물이 없는 펫시터"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textColor="@color/common_google_signin_btn_text_light"-->
+<!--            android:layout_below="@id/service_check1"/>-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/service_check3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="대형견 가능"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textColor="@color/common_google_signin_btn_text_light"-->
+<!--            android:layout_below="@id/service_check2"/>-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/service_check4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="마당 있음"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:textColor="@color/common_google_signin_btn_text_light"-->
+<!--            android:layout_below="@id/service_check3"/>-->
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/service_check5"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Check"-->
+        <!--        android:textSize="20dp"-->
+        <!--        android:layout_marginLeft="100dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_below="@id/extra_service_txt"-->
+        <!--        android:layout_toRightOf="@+id/service_check1"/>-->
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/service_check6"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Check"-->
+        <!--        android:textSize="20sp"-->
+        <!--        android:layout_marginLeft="100dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_below="@id/service_check1"-->
+        <!--        android:layout_toRightOf="@+id/service_check1"/>-->
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/service_check7"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Check"-->
+        <!--        android:textSize="20sp"-->
+        <!--        android:layout_marginLeft="100dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_below="@id/service_check2"-->
+        <!--        android:layout_toRightOf="@+id/service_check1"/>-->
+
+        <!--    <CheckBox-->
+        <!--        android:id="@+id/service_check8"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Check"-->
+        <!--        android:textSize="20sp"-->
+        <!--        android:layout_marginLeft="100dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_below="@id/service_check3"-->
+        <!--        android:layout_toRightOf="@+id/service_check1"/>-->
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loc_radio_btn_group"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "348529019295",
+    "firebase_url": "https://authentication-1c209.firebaseio.com",
+    "project_id": "authentication-1c209",
+    "storage_bucket": "authentication-1c209.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348529019295:android:75bdf9f9378bc9446955aa",
+        "android_client_info": {
+          "package_name": "com.sw.PuppyFriends"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348529019295-bq8kjgeu8oonoedgqq1h2roukkpn4a0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.PuppyFriends",
+            "certificate_hash": "a37c699ce1da268b7394a3e74ea001de686181ce"
+          }
+        },
+        {
+          "client_id": "348529019295-fqid1c13398p96kqst3crsa92atapvlu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjnpLTWvtPMR7Q_SVQ6RUzji6p0SYiIjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348529019295-fqid1c13398p96kqst3crsa92atapvlu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <Button
+        android:id="@+id/button_applypetsitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="팻시터 지원하기"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_applypetsitter"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="이름"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_applypetsitter"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="이름을 입력하세요."
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="성별"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_gender"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="성별을 입력하세요."
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gender"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="받고 싶은 가격"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gender"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/tv_price"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="희망 가격을 입력하세요"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_petsitterex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_price"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="팻시터 경험"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_petsitterex"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_price"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/tv_petsitterex"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="팻시터 경험 여부를 입력하세요"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_handlingex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_petsitterex"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="대형견 핸들링 경험"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_handlingex"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_petsitterex"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/tv_handlingex"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="대형견 핸들링 가능 여부 입력하세요"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_handlingex"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="자차 보유 여부"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_car"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_handlingex"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/tv_car"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="자차 보유 여부를 입력하세요"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_smoking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_car"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="흡연 여부"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_smoking"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_car"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/tv_smoking"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="흡연 여부를 입력하세요"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_petex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_smoking"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="반려동물 양육경험"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_petex"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_smoking"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/tv_petex"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="반려동물 양육 경험 여부를 입력하세요"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_warning"
+        android:layout_width="396dp"
+        android:layout_height="58dp"
+        android:layout_above="@id/button_register"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="* 상기 작성한 모든 정보는 사실임을 확인하며, 거짓 작성으로 인한 모든 책임은 회원에게 있음을 알려드립니다."
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="212dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="등록하기"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="195dp"
+        android:layout_height="61dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="취소하기"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
